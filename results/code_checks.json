@@ -1,0 +1,5 @@
+{
+  "regression_tests_passed": 4,
+  "completion_guard_mutation_detected": true,
+  "scope": "Interrupted-training state and out-of-bounds annotation handling; numerical runtime covered by actual smoke/matrix/reload checks"
+}

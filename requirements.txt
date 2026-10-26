@@ -1,0 +1,18 @@
+# Tested core, installed separately using the official PyTorch CUDA 12.1 index:
+# torch==2.5.1+cu121
+# torchvision==0.20.1+cu121
+# Ultralytics source is downloaded at an exact commit by download_resources.py.
+torch-pruning==1.6.1
+seaborn==0.13.2
+sentry-sdk==2.42.1
+numpy==2.5.2
+Pillow==12.3.0
+opencv-python==5.0.0.93
+matplotlib==3.11.1
+pandas==2.2.2
+scipy==1.18.1
+PyYAML>=6.0
+requests>=2.32
+tqdm>=4.64
+psutil>=7.0
+ultralytics-thop>=2.0

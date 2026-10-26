@@ -1,0 +1,71 @@
+{
+  "dataset": "NEU-DET",
+  "source": "official author Google Drive link",
+  "image_count": 1800,
+  "box_count": 4189,
+  "seed": 2026,
+  "split_origin": "Our seeded grouped class-stratified split; not an official benchmark split",
+  "image_counts": {
+    "train": {
+      "crazing": 210,
+      "inclusion": 210,
+      "patches": 210,
+      "pitted_surface": 210,
+      "rolled-in_scale": 210,
+      "scratches": 210
+    },
+    "val": {
+      "crazing": 45,
+      "inclusion": 45,
+      "patches": 45,
+      "pitted_surface": 45,
+      "rolled-in_scale": 45,
+      "scratches": 45
+    },
+    "test": {
+      "crazing": 45,
+      "inclusion": 45,
+      "patches": 45,
+      "pitted_surface": 45,
+      "rolled-in_scale": 45,
+      "scratches": 45
+    }
+  },
+  "box_counts": {
+    "train": {
+      "crazing": 472,
+      "patches": 616,
+      "inclusion": 707,
+      "pitted_surface": 298,
+      "rolled-in_scale": 439,
+      "scratches": 383
+    },
+    "val": {
+      "crazing": 114,
+      "patches": 141,
+      "inclusion": 151,
+      "pitted_surface": 65,
+      "rolled-in_scale": 99,
+      "scratches": 84
+    },
+    "test": {
+      "crazing": 103,
+      "inclusion": 153,
+      "patches": 124,
+      "pitted_surface": 69,
+      "rolled-in_scale": 90,
+      "scratches": 81
+    }
+  },
+  "exact_duplicate_pairs": [
+    [
+      "patches_105",
+      "patches_101"
+    ]
+  ],
+  "near_duplicate_pairs": [],
+  "near_duplicate_rule": "dHash64 Hamming <=2 and 32x32 grayscale MAE <=3; grouped before split",
+  "near_duplicate_limit": "Heuristic does not prove independence of unknown source workpieces or exclude all near duplicates",
+  "cross_split_duplicate_pairs_by_defined_rule": 0,
+  "coordinate_convention": "XML coordinates treated as continuous image-edge coordinates, normalized directly without +/-1 or clipping"
+}

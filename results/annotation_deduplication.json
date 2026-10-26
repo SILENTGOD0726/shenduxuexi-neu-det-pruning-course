@@ -1,0 +1,32 @@
+{
+  "raw_xml_boxes": 4189,
+  "effective_unique_label_boxes": 4186,
+  "raw_by_split": {
+    "train": 2915,
+    "val": 654,
+    "test": 620
+  },
+  "effective_by_split": {
+    "train": 2912,
+    "val": 654,
+    "test": 620
+  },
+  "files": [
+    {
+      "id": "crazing_120",
+      "split": "train",
+      "duplicate_boxes": 1
+    },
+    {
+      "id": "inclusion_62",
+      "split": "train",
+      "duplicate_boxes": 1
+    },
+    {
+      "id": "patches_198",
+      "split": "train",
+      "duplicate_boxes": 1
+    }
+  ],
+  "handling": "Original converted labels are retained; upstream dataset verifier removes exact duplicate label rows before loading"
+}

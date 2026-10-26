@@ -1,0 +1,19 @@
+{
+  "official_dataset_page": "https://faculty.neu.edu.cn/songkechen/zh_CN/zdylm/263270/list/index.htm",
+  "hash_note": "Locally recorded hashes; publisher SHA256 values were not supplied.",
+  "ultralytics_source.zip": {
+    "url": "https://codeload.github.com/ultralytics/ultralytics/zip/44c7c3514d87a5e05cfb14dba5a3eeb6eb860e70",
+    "bytes": 832145,
+    "sha256_recorded_locally": "b9cfda3ada1af133eaec880afd0801db655c6e5a2eb82e6dde3a878d644e5df6"
+  },
+  "NEU-DET.zip": {
+    "url": "https://drive.usercontent.google.com/download?id=1qrdZlaDi272eA79b0uCwwqPrm2Q_WI3k&export=download&confirm=t",
+    "bytes": 27607059,
+    "sha256_recorded_locally": "cf04bb0b05d364f23e05031b191b20b908a0e5eb11466df74ee7fba98ec835d5"
+  },
+  "pretrained_weight": {
+    "url": "https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt",
+    "bytes": 6534387,
+    "sha256_recorded_locally": "31e20dde3def09e2cf938c7be6fe23d9150bbbe503982af13345706515f2ef95"
+  }
+}

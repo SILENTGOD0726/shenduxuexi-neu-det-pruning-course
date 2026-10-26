@@ -1,0 +1,607 @@
+{
+  "conditions": [
+    {
+      "seed": 42,
+      "stage": "control",
+      "before_validation": {
+        "mAP50": 0.776893522164933,
+        "mAP50_95": 0.4466993289121135,
+        "precision": 0.71807504963563,
+        "recall": 0.7269233981643386,
+        "per_class_mAP50_95": {
+          "crazing": 0.1953500073784713,
+          "inclusion": 0.47754850537697024,
+          "patches": 0.5716460117681184,
+          "pitted_surface": 0.588497664838052,
+          "rolled-in_scale": 0.24542323101241137,
+          "scratches": 0.6017305530986579
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7657366660875179,
+        "mAP50_95": 0.430313433179749,
+        "precision": 0.6580164930231603,
+        "recall": 0.74682733391875,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "fde637000bd399704262aab2b5ccfca84eee080d962951b1617b12194c786312",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_42_control.pt",
+      "checkpoint_sha256": "b3d1d72c1a74342a7f12e3b535d6c528f57e339d6b4099a417ac837e62a56f10"
+    },
+    {
+      "seed": 42,
+      "stage": "prune20",
+      "before_validation": {
+        "mAP50": 0.00013392442646416666,
+        "mAP50_95": 2.259763748951206e-05,
+        "precision": 0.00017062662628503179,
+        "recall": 0.028368794326241134,
+        "per_class_mAP50_95": {
+          "crazing": 0.0,
+          "inclusion": 0.0,
+          "patches": 0.00013558582493707237,
+          "pitted_surface": 0.0,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1950274,
+        "macs_per_image": 675687800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.15642995990403238,
+        "mAP50_95": 0.049315805319303775,
+        "precision": 0.20605400889968495,
+        "recall": 0.20308755648399454,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "a360fd8b4ebf68d0b2b1a804184526c673bfde4a740fdbbfecba03e0f84507a6",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_42_prune20.pt",
+      "checkpoint_sha256": "2dae8740aa212866bbbfea66becf8496a0d2680c4a2705f885cded4857bf08cf"
+    },
+    {
+      "seed": 42,
+      "stage": "prune40",
+      "before_validation": {
+        "mAP50": 4.151768739937273e-05,
+        "mAP50_95": 9.369840454212762e-06,
+        "precision": 7.220143710036805e-05,
+        "recall": 0.006935637906470653,
+        "per_class_mAP50_95": {
+          "crazing": 0.0,
+          "inclusion": 1.042797002185527e-05,
+          "patches": 4.57910727034213e-05,
+          "pitted_surface": 0.0,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1246162,
+        "macs_per_image": 512823800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.04949007705709691,
+        "mAP50_95": 0.013109435073078933,
+        "precision": 0.09585911477187181,
+        "recall": 0.10979107328584126,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "1567bf61566022d090090747b47f37d8835e777ef6051dd3879fe5c0f7a74d67",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_42_prune40.pt",
+      "checkpoint_sha256": "5fb25a359bfea64dd8ed29592cff117b98f775a8ec8de25a456f36cd9d5df171"
+    },
+    {
+      "seed": 43,
+      "stage": "control",
+      "before_validation": {
+        "mAP50": 0.7847548285527312,
+        "mAP50_95": 0.4374538847021427,
+        "precision": 0.7439638801477169,
+        "recall": 0.7466813485069358,
+        "per_class_mAP50_95": {
+          "crazing": 0.1873373191235112,
+          "inclusion": 0.46342947082868446,
+          "patches": 0.5644613266904652,
+          "pitted_surface": 0.5654846576754358,
+          "rolled-in_scale": 0.2769654327178256,
+          "scratches": 0.567045101176934
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7749748496804393,
+        "mAP50_95": 0.4312097903917903,
+        "precision": 0.761506059105702,
+        "recall": 0.7044581104822069,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "88c113248c7ff35b83b93c5b30c59cc33f95e3208b5ff4fc5a7a8bea56abe486",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_43_control.pt",
+      "checkpoint_sha256": "42a515920e5ceb244be19f86c19e743ce736623f98f78f38853c1af801b86924"
+    },
+    {
+      "seed": 43,
+      "stage": "prune20",
+      "before_validation": {
+        "mAP50": 0.01052611980189625,
+        "mAP50_95": 0.002124985720496234,
+        "precision": 0.0032591812906795034,
+        "recall": 0.21852346359625197,
+        "per_class_mAP50_95": {
+          "crazing": 0.007289676726272998,
+          "inclusion": 0.0,
+          "patches": 3.4961236999863614e-06,
+          "pitted_surface": 0.00545674147300442,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1956546,
+        "macs_per_image": 658836600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.25073806397660675,
+        "mAP50_95": 0.0867473972780232,
+        "precision": 0.34895699811872394,
+        "recall": 0.284762000404942,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "fc29dd66b35776e927ab53d5b59c4c12027eec33d90a29f86c49e4673ddbd9e1",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_43_prune20.pt",
+      "checkpoint_sha256": "8f640745444134a42b1612b8b616b2066e04a716755163923ea76e71616b384d"
+    },
+    {
+      "seed": 43,
+      "stage": "prune40",
+      "before_validation": {
+        "mAP50": 0.007449264066553039,
+        "mAP50_95": 0.00166752253990013,
+        "precision": 0.004827117969177361,
+        "recall": 0.21405757984705354,
+        "per_class_mAP50_95": {
+          "crazing": 0.003674394634085315,
+          "inclusion": 0.0,
+          "patches": 0.0,
+          "pitted_surface": 0.006330740605315466,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1265874,
+        "macs_per_image": 510972600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.0584669670296108,
+        "mAP50_95": 0.01669699019083378,
+        "precision": 0.2020398465100274,
+        "recall": 0.07080783365091782,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "887204569f661af1112bac908ba1fd885d5d7cba951686f09ae1e55b4afe7c44",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_43_prune40.pt",
+      "checkpoint_sha256": "db91d5a484f5c94e66b6851d43e6ecf1372478166b1f886eaa9702030e778d14"
+    },
+    {
+      "seed": 44,
+      "stage": "control",
+      "before_validation": {
+        "mAP50": 0.7539027890031212,
+        "mAP50_95": 0.4253855542912586,
+        "precision": 0.7025807097936272,
+        "recall": 0.6999880129777493,
+        "per_class_mAP50_95": {
+          "crazing": 0.17826191987213724,
+          "inclusion": 0.46525224656918623,
+          "patches": 0.5783542125859189,
+          "pitted_surface": 0.5436030242328458,
+          "rolled-in_scale": 0.21392681165430938,
+          "scratches": 0.5729151108331542
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7479423797112652,
+        "mAP50_95": 0.4203989510589334,
+        "precision": 0.7015002275908794,
+        "recall": 0.6842589077508192,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "e7faf91afebff734a13ecfa71e178cff650be4e3115a012cdae07139c53e642e",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_44_control.pt",
+      "checkpoint_sha256": "ad31bcc5eaa46c15573552320dc3554d563fd77c94384ef9335dbb5fda06a86d"
+    },
+    {
+      "seed": 44,
+      "stage": "prune20",
+      "before_validation": {
+        "mAP50": 0.007885549453694308,
+        "mAP50_95": 0.0020878201244807484,
+        "precision": 0.002187575738802816,
+        "recall": 0.16152027641389344,
+        "per_class_mAP50_95": {
+          "crazing": 0.0,
+          "inclusion": 0.0,
+          "patches": 0.00011123747772338923,
+          "pitted_surface": 0.012415683269161102,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1927826,
+        "macs_per_image": 654619000.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.17974688987506174,
+        "mAP50_95": 0.055222977724910374,
+        "precision": 0.2992696145982438,
+        "recall": 0.21681590017876037,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "8170f48c9d679158713e0355a7ca70eaf21181a98d5dfc9d1216f8b263a7c37b",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_44_prune20.pt",
+      "checkpoint_sha256": "cc03ca20cd384c274116f62c9cdd778d74b26d8b5a530440652d03d3e42fef55"
+    },
+    {
+      "seed": 44,
+      "stage": "prune40",
+      "before_validation": {
+        "mAP50": 0.015668477936640893,
+        "mAP50_95": 0.004005649352000792,
+        "precision": 0.018173872429091728,
+        "recall": 0.04259823279127211,
+        "per_class_mAP50_95": {
+          "crazing": 0.0,
+          "inclusion": 4.437346533858504e-05,
+          "patches": 1.0361927554541022e-05,
+          "pitted_surface": 0.02397916071911163,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1245378,
+        "macs_per_image": 497724600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "after_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.062460689106198806,
+        "mAP50_95": 0.016065065576817937,
+        "precision": 0.143269847643572,
+        "recall": 0.10007784570516785,
+        "dtype": "torch.float32",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      },
+      "calibration": {
+        "gradient_updates": 0,
+        "batchnorm_modules": 65,
+        "batches": 20,
+        "images": 640,
+        "split": "train",
+        "trainable_parameter_values_unchanged": true,
+        "parameter_sha256_before_and_after": "62490da7626dc24ca817f08bc09ab6b7fc889bf0df2b0f3657cff5affe05a86a",
+        "policy": "Reset BN running statistics; cumulative average; only BN in train mode; other modules eval; no augmentation"
+      },
+      "checkpoint": ".supplement\\bn_44_prune40.pt",
+      "checkpoint_sha256": "31fa37976b8910fffb01a2ea805e900387a8232701027cdb113ad90b0961b1ea"
+    }
+  ]
+}

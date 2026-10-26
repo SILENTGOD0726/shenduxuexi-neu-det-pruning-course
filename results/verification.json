@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "formal_training_epochs": 255,
+  "independent_training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "training_runs": 12,
+  "test_conditions": 18,
+  "image_count": 1800,
+  "box_count": 4189,
+  "no_cross_split_exact_duplicate_images": true,
+  "all_saved_checkpoints_reload_verified": true,
+  "canonical_input_shape_verified": true,
+  "source_syntax_checked": true
+}

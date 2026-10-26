@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "original_result_and_weight_hashes_unchanged": true,
+  "timing_conditions": 72,
+  "samples_per_scope_per_condition": 120,
+  "FP16_validation_conditions": 12,
+  "BN_validation_conditions": 9,
+  "fusion_equivalence_checks": 12,
+  "all_bn_parameter_values_unchanged": true,
+  "no_test_images_used": true,
+  "status": "Exploratory validation diagnostics, not a new held-out benchmark"
+}

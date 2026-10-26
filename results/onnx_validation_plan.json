@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-10-26T06:57:36.263354+00:00",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "stages": [
+    "control",
+    "prune20",
+    "prune40"
+  ],
+  "shape": [
+    1,
+    3,
+    320,
+    320
+  ],
+  "opset": 12,
+  "exporter": "torch2.5.1 legacy TorchScript exporter; dynamo=False; static batch1",
+  "runtime": "1.20.1",
+  "onnx": "1.17.0",
+  "provider": "CPUExecutionProvider",
+  "intra_threads": 4,
+  "inter_threads": 1,
+  "parity_rtol": 0.0001,
+  "parity_atol": 0.002,
+  "validation_AP_maximum_absolute_tolerance": 0.005,
+  "validation_only": true,
+  "test_images_read": false,
+  "timing_warmup": 20,
+  "timing_measurements": 120,
+  "source": "https://onnxruntime.ai/docs/api/python/api_summary.html"
+}

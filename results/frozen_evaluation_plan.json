@@ -1,0 +1,19 @@
+{
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "conditions": [
+    "baseline",
+    "control",
+    "prune20_before",
+    "prune20",
+    "prune40_before",
+    "prune40"
+  ],
+  "baseline_epochs": 40,
+  "extra_epochs": 15,
+  "selection": "All six predeclared conditions evaluated; no test-based tuning",
+  "manifest_sha256": "e672c04c7f64e7ba7322da19176d5e33fc7c79527b610d836b58f26ec68592d0"
+}

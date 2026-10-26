@@ -1,0 +1,306 @@
+{
+  "seed": 42,
+  "baseline_epochs": 40,
+  "extra_epochs": 15,
+  "imgsz": 320,
+  "batch": 32,
+  "conditions": {
+    "baseline": {
+      "checkpoint": "run_seed42\\baseline\\weights\\best.pt",
+      "validation": {
+        "mAP50": 0.774107150917139,
+        "mAP50_95": 0.4439345948768645,
+        "precision": 0.7080052617379266,
+        "recall": 0.7285498508723737,
+        "per_class_mAP50_95": {
+          "crazing": 0.19092114746752747,
+          "inclusion": 0.4760935562505722,
+          "patches": 0.5710080882016456,
+          "pitted_surface": 0.5846958762806517,
+          "rolled-in_scale": 0.24684175268441266,
+          "scratches": 0.5940471483763772
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      }
+    },
+    "control": {
+      "conversion": {
+        "converted_blocks": 8,
+        "maximum_absolute_output_error": 0.0,
+        "allclose": true,
+        "rtol": 1e-05,
+        "atol": 0.0002
+      },
+      "requested_channel_ratio": 0.0,
+      "checkpoint": "run_seed42\\control\\weights\\best.pt",
+      "validation": {
+        "mAP50": 0.776893522164933,
+        "mAP50_95": 0.4466993289121135,
+        "precision": 0.71807504963563,
+        "recall": 0.7269233981643386,
+        "per_class_mAP50_95": {
+          "crazing": 0.1953500073784713,
+          "inclusion": 0.47754850537697024,
+          "patches": 0.5716460117681184,
+          "pitted_surface": 0.588497664838052,
+          "rolled-in_scale": 0.24542323101241137,
+          "scratches": 0.6017305530986579
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      }
+    },
+    "prune20": {
+      "conversion": {
+        "converted_blocks": 8,
+        "maximum_absolute_output_error": 0.0,
+        "allclose": true,
+        "rtol": 1e-05,
+        "atol": 0.0002
+      },
+      "requested_channel_ratio": 0.2,
+      "pruning": {
+        "requested_channel_ratio": 0.2,
+        "before": {
+          "parameters": 3012018,
+          "macs_per_image": 1018316600.0,
+          "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+          "input": [
+            1,
+            3,
+            320,
+            320
+          ]
+        },
+        "after": {
+          "parameters": 1950274,
+          "macs_per_image": 675687800.0,
+          "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+          "input": [
+            1,
+            3,
+            320,
+            320
+          ]
+        },
+        "actual_parameter_reduction": 0.3525025414854759,
+        "actual_mac_reduction": 0.33646588889938556,
+        "protected_module": "Detect",
+        "round_to": 8
+      },
+      "before_checkpoint": "run_seed42\\prune20\\pruned_before.pt",
+      "before_validation": {
+        "mAP50": 0.00013392442646416666,
+        "mAP50_95": 2.259763748951206e-05,
+        "precision": 0.00017062662628503179,
+        "recall": 0.028368794326241134,
+        "per_class_mAP50_95": {
+          "crazing": 0.0,
+          "inclusion": 0.0,
+          "patches": 0.00013558582493707237,
+          "pitted_surface": 0.0,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1950274,
+        "macs_per_image": 675687800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "checkpoint": "run_seed42\\prune20\\weights\\best.pt",
+      "validation": {
+        "mAP50": 0.754222982392701,
+        "mAP50_95": 0.4214033174783814,
+        "precision": 0.726521328496284,
+        "recall": 0.7070059870177414,
+        "per_class_mAP50_95": {
+          "crazing": 0.183289246522025,
+          "inclusion": 0.4406719514918508,
+          "patches": 0.5392725918465376,
+          "pitted_surface": 0.5777907058843795,
+          "rolled-in_scale": 0.24345070129800428,
+          "scratches": 0.543944707827491
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1950274,
+        "macs_per_image": 675687800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      }
+    },
+    "prune40": {
+      "conversion": {
+        "converted_blocks": 8,
+        "maximum_absolute_output_error": 0.0,
+        "allclose": true,
+        "rtol": 1e-05,
+        "atol": 0.0002
+      },
+      "requested_channel_ratio": 0.4,
+      "pruning": {
+        "requested_channel_ratio": 0.4,
+        "before": {
+          "parameters": 3012018,
+          "macs_per_image": 1018316600.0,
+          "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+          "input": [
+            1,
+            3,
+            320,
+            320
+          ]
+        },
+        "after": {
+          "parameters": 1246162,
+          "macs_per_image": 512823800.0,
+          "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+          "input": [
+            1,
+            3,
+            320,
+            320
+          ]
+        },
+        "actual_parameter_reduction": 0.5862700687711694,
+        "actual_mac_reduction": 0.49640043184997673,
+        "protected_module": "Detect",
+        "round_to": 8
+      },
+      "before_checkpoint": "run_seed42\\prune40\\pruned_before.pt",
+      "before_validation": {
+        "mAP50": 4.151768739937273e-05,
+        "mAP50_95": 9.369840454212762e-06,
+        "precision": 7.220143710036805e-05,
+        "recall": 0.006935637906470653,
+        "per_class_mAP50_95": {
+          "crazing": 0.0,
+          "inclusion": 1.042797002185527e-05,
+          "patches": 4.57910727034213e-05,
+          "pitted_surface": 0.0,
+          "rolled-in_scale": 0.0,
+          "scratches": 0.0
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1246162,
+        "macs_per_image": 512823800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "checkpoint": "run_seed42\\prune40\\weights\\best.pt",
+      "validation": {
+        "mAP50": 0.7306767862436924,
+        "mAP50_95": 0.3991211819551612,
+        "precision": 0.6492162438488714,
+        "recall": 0.6965681576098876,
+        "per_class_mAP50_95": {
+          "crazing": 0.1725794660768156,
+          "inclusion": 0.45711259936943777,
+          "patches": 0.545598947010376,
+          "pitted_surface": 0.5263626017027402,
+          "rolled-in_scale": 0.19499130843502704,
+          "scratches": 0.49808216913657083
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1246162,
+        "macs_per_image": 512823800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      }
+    }
+  },
+  "environment": {
+    "packages": {
+      "torch": "2.5.1+cu121",
+      "torchvision": "0.20.1+cu121",
+      "numpy": "2.5.2",
+      "torch-pruning": "1.6.1",
+      "opencv-python": "5.0.0.93",
+      "Pillow": "12.3.0",
+      "matplotlib": "3.11.1",
+      "pandas": "2.2.2",
+      "seaborn": "0.13.2",
+      "ultralytics_source_version": "8.0.90",
+      "ultralytics_source_commit": "44c7c3514d87a5e05cfb14dba5a3eeb6eb860e70"
+    },
+    "gpu": "NVIDIA GeForce RTX 3080 Laptop GPU",
+    "gpu_memory_GiB": 7.99951171875,
+    "cuda_runtime": "12.1",
+    "training_precision": "FP32",
+    "upstream_in_training_validation": "FP16 EMA evaluation; canonical reported evaluation is explicit FP32",
+    "python": "3.12.5",
+    "environment": "Project-local additional dependencies, system-site-packages PyTorch reuse"
+  },
+  "selection": "Best checkpoint by validation fitness; test untouched until evaluate mode",
+  "training_setup": {
+    "optimizer": "SGD",
+    "baseline_lr": 0.01,
+    "extra_lr": 0.001,
+    "mosaic": 0,
+    "flip_vertical": 0.5,
+    "flip_horizontal": 0.5
+  },
+  "wall_seconds_this_invocation": 804.1445754999995,
+  "matrix_complete": true
+}

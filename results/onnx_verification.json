@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "exports": 9,
+  "full_validation_images_each": 270,
+  "parity_images_each": 14,
+  "runtime": "ONNX Runtime CPU",
+  "no_test_images_used": true,
+  "original_checkpoints_unchanged": true,
+  "all_validation_AP_differences_within_predeclared_tolerance": true
+}

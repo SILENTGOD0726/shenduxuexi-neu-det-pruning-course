@@ -1,0 +1,24 @@
+{
+  "packages": {
+    "torch": "2.5.1+cu121",
+    "torchvision": "0.20.1+cu121",
+    "numpy": "2.5.2",
+    "torch-pruning": "1.6.1",
+    "opencv-python": "5.0.0.93",
+    "Pillow": "12.3.0",
+    "matplotlib": "3.11.1",
+    "pandas": "2.2.2",
+    "seaborn": "0.13.2",
+    "ultralytics_source_version": "8.0.90",
+    "ultralytics_source_commit": "44c7c3514d87a5e05cfb14dba5a3eeb6eb860e70"
+  },
+  "gpu": "NVIDIA GeForce RTX 3080 Laptop GPU",
+  "gpu_memory_GiB": 7.99951171875,
+  "cuda_runtime": "12.1",
+  "training_precision": "FP32",
+  "upstream_in_training_validation": "FP16 EMA evaluation; canonical reported evaluation is explicit FP32",
+  "python": "3.12.5",
+  "environment": "Project-local additional dependencies, system-site-packages PyTorch reuse",
+  "cuda_small_computation_passed": true,
+  "disk_free_GiB_at_check": 194.08620834350586
+}

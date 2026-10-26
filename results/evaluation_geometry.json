@@ -1,0 +1,27 @@
+{
+  "training_validation_rectangular_batch_shapes": [
+    [
+      352,
+      352
+    ],
+    [
+      352,
+      352
+    ],
+    [
+      352,
+      352
+    ],
+    [
+      352,
+      352
+    ],
+    [
+      352,
+      352
+    ]
+  ],
+  "training_validation_precision": "FP16 EMA by upstream framework",
+  "canonical_evaluation_rect": false,
+  "canonical_evaluation_imgsz": 320
+}

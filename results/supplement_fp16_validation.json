@@ -1,0 +1,664 @@
+{
+  "conditions": [
+    {
+      "seed": 42,
+      "stage": "baseline",
+      "fp32_validation": {
+        "mAP50": 0.774107150917139,
+        "mAP50_95": 0.4439345948768645,
+        "precision": 0.7080052617379266,
+        "recall": 0.7285498508723737,
+        "per_class_mAP50_95": {
+          "crazing": 0.19092114746752747,
+          "inclusion": 0.4760935562505722,
+          "patches": 0.5710080882016456,
+          "pitted_surface": 0.5846958762806517,
+          "rolled-in_scale": 0.24684175268441266,
+          "scratches": 0.5940471483763772
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7750625131686393,
+        "mAP50_95": 0.4445248346832194,
+        "precision": 0.7068626936717216,
+        "recall": 0.7273623977109991,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "stage": "control",
+      "fp32_validation": {
+        "mAP50": 0.776893522164933,
+        "mAP50_95": 0.4466993289121135,
+        "precision": 0.71807504963563,
+        "recall": 0.7269233981643386,
+        "per_class_mAP50_95": {
+          "crazing": 0.1953500073784713,
+          "inclusion": 0.47754850537697024,
+          "patches": 0.5716460117681184,
+          "pitted_surface": 0.588497664838052,
+          "rolled-in_scale": 0.24542323101241137,
+          "scratches": 0.6017305530986579
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7767955077953403,
+        "mAP50_95": 0.44652487087519627,
+        "precision": 0.7163842666414412,
+        "recall": 0.7272995007137858,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "stage": "prune20",
+      "fp32_validation": {
+        "mAP50": 0.754222982392701,
+        "mAP50_95": 0.4214033174783814,
+        "precision": 0.726521328496284,
+        "recall": 0.7070059870177414,
+        "per_class_mAP50_95": {
+          "crazing": 0.183289246522025,
+          "inclusion": 0.4406719514918508,
+          "patches": 0.5392725918465376,
+          "pitted_surface": 0.5777907058843795,
+          "rolled-in_scale": 0.24345070129800428,
+          "scratches": 0.543944707827491
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1950274,
+        "macs_per_image": 675687800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7545837714467822,
+        "mAP50_95": 0.42202515824596293,
+        "precision": 0.7225006005067683,
+        "recall": 0.7087698745301192,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 42,
+      "stage": "prune40",
+      "fp32_validation": {
+        "mAP50": 0.7306767862436924,
+        "mAP50_95": 0.3991211819551612,
+        "precision": 0.6492162438488714,
+        "recall": 0.6965681576098876,
+        "per_class_mAP50_95": {
+          "crazing": 0.1725794660768156,
+          "inclusion": 0.45711259936943777,
+          "patches": 0.545598947010376,
+          "pitted_surface": 0.5263626017027402,
+          "rolled-in_scale": 0.19499130843502704,
+          "scratches": 0.49808216913657083
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1246162,
+        "macs_per_image": 512823800.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7300398816063479,
+        "mAP50_95": 0.3990854389727356,
+        "precision": 0.6407616089778504,
+        "recall": 0.6948846559263858,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "stage": "baseline",
+      "fp32_validation": {
+        "mAP50": 0.7743232497850139,
+        "mAP50_95": 0.4240537060569094,
+        "precision": 0.737226867615962,
+        "recall": 0.749371476439629,
+        "per_class_mAP50_95": {
+          "crazing": 0.19133231206537518,
+          "inclusion": 0.44695355226515165,
+          "patches": 0.5662503879855608,
+          "pitted_surface": 0.5414329347573343,
+          "rolled-in_scale": 0.267727322726642,
+          "scratches": 0.530625726541392
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7710163420040743,
+        "mAP50_95": 0.4243319822283329,
+        "precision": 0.7343753534105205,
+        "recall": 0.7470455564160837,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "stage": "control",
+      "fp32_validation": {
+        "mAP50": 0.7847548285527312,
+        "mAP50_95": 0.4374538847021427,
+        "precision": 0.7439638801477169,
+        "recall": 0.7466813485069358,
+        "per_class_mAP50_95": {
+          "crazing": 0.1873373191235112,
+          "inclusion": 0.46342947082868446,
+          "patches": 0.5644613266904652,
+          "pitted_surface": 0.5654846576754358,
+          "rolled-in_scale": 0.2769654327178256,
+          "scratches": 0.567045101176934
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7830507847860058,
+        "mAP50_95": 0.4371656092177775,
+        "precision": 0.7453486620172872,
+        "recall": 0.7410454063403388,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "stage": "prune20",
+      "fp32_validation": {
+        "mAP50": 0.7648944153836807,
+        "mAP50_95": 0.42239344109856525,
+        "precision": 0.6936478417239117,
+        "recall": 0.7335525251495878,
+        "per_class_mAP50_95": {
+          "crazing": 0.15354075561977087,
+          "inclusion": 0.45391085599926395,
+          "patches": 0.5242747353229233,
+          "pitted_surface": 0.5677186249958427,
+          "rolled-in_scale": 0.27816060256454017,
+          "scratches": 0.5567550720890506
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1956546,
+        "macs_per_image": 658836600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7647198928442617,
+        "mAP50_95": 0.420952420929552,
+        "precision": 0.6953981819209835,
+        "recall": 0.733541759067628,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 43,
+      "stage": "prune40",
+      "fp32_validation": {
+        "mAP50": 0.7361695642835809,
+        "mAP50_95": 0.3915044284467894,
+        "precision": 0.6689972403242347,
+        "recall": 0.6752882376021879,
+        "per_class_mAP50_95": {
+          "crazing": 0.13893027389021784,
+          "inclusion": 0.4405826717554883,
+          "patches": 0.5153977362324216,
+          "pitted_surface": 0.5215732471052958,
+          "rolled-in_scale": 0.23121701276909828,
+          "scratches": 0.5013256289282148
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1265874,
+        "macs_per_image": 510972600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7357309075262939,
+        "mAP50_95": 0.3904758737813068,
+        "precision": 0.6598638741508688,
+        "recall": 0.6835579470228295,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "stage": "baseline",
+      "fp32_validation": {
+        "mAP50": 0.7527470048011299,
+        "mAP50_95": 0.4242726108831709,
+        "precision": 0.731831892388231,
+        "recall": 0.6794634124862613,
+        "per_class_mAP50_95": {
+          "crazing": 0.17729284922433192,
+          "inclusion": 0.4764351789001826,
+          "patches": 0.5740150834229991,
+          "pitted_surface": 0.5428662899049393,
+          "rolled-in_scale": 0.20389563818826678,
+          "scratches": 0.5711306256583057
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7527671782721749,
+        "mAP50_95": 0.42434697222568685,
+        "precision": 0.7153225718643905,
+        "recall": 0.6942292206695514,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "stage": "control",
+      "fp32_validation": {
+        "mAP50": 0.7539027890031212,
+        "mAP50_95": 0.4253855542912586,
+        "precision": 0.7025807097936272,
+        "recall": 0.6999880129777493,
+        "per_class_mAP50_95": {
+          "crazing": 0.17826191987213724,
+          "inclusion": 0.46525224656918623,
+          "patches": 0.5783542125859189,
+          "pitted_surface": 0.5436030242328458,
+          "rolled-in_scale": 0.21392681165430938,
+          "scratches": 0.5729151108331542
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 3012018,
+        "macs_per_image": 1018316600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7545460737444327,
+        "mAP50_95": 0.4256795282700689,
+        "precision": 0.7060300118189436,
+        "recall": 0.7015564161249537,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "stage": "prune20",
+      "fp32_validation": {
+        "mAP50": 0.7492636709834853,
+        "mAP50_95": 0.4012790916579073,
+        "precision": 0.687945342488186,
+        "recall": 0.7067225508586521,
+        "per_class_mAP50_95": {
+          "crazing": 0.15641232715800796,
+          "inclusion": 0.45870693759121084,
+          "patches": 0.5447940031568661,
+          "pitted_surface": 0.5328780638067223,
+          "rolled-in_scale": 0.19029631683906728,
+          "scratches": 0.524586901395569
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1927826,
+        "macs_per_image": 654619000.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7486737905776092,
+        "mAP50_95": 0.4002041969653503,
+        "precision": 0.6875558475700343,
+        "recall": 0.7076458690455283,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    },
+    {
+      "seed": 44,
+      "stage": "prune40",
+      "fp32_validation": {
+        "mAP50": 0.7261650862557425,
+        "mAP50_95": 0.38659098104744477,
+        "precision": 0.6625014985955672,
+        "recall": 0.6997615632383019,
+        "per_class_mAP50_95": {
+          "crazing": 0.13816228478218046,
+          "inclusion": 0.44206627920172653,
+          "patches": 0.5193726706109193,
+          "pitted_surface": 0.5068443177128777,
+          "rolled-in_scale": 0.2384155268031194,
+          "scratches": 0.474684807173845
+        },
+        "split": "val",
+        "precision_mode": "FP32",
+        "confidence_for_AP": 0.001,
+        "nms_iou": 0.7,
+        "max_detections": 100,
+        "parameters": 1245378,
+        "macs_per_image": 497724600.0,
+        "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+        "input": [
+          1,
+          3,
+          320,
+          320
+        ]
+      },
+      "fp16_validation": {
+        "split": "val",
+        "images": 270,
+        "mAP50": 0.7255374831740192,
+        "mAP50_95": 0.38587836907207834,
+        "precision": 0.6625829407931088,
+        "recall": 0.697880864292745,
+        "dtype": "torch.float16",
+        "observed_input_shapes": [
+          [
+            14,
+            3,
+            320,
+            320
+          ],
+          [
+            32,
+            3,
+            320,
+            320
+          ]
+        ]
+      }
+    }
+  ]
+}

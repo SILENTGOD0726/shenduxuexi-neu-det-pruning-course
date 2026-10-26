@@ -1,0 +1,23 @@
+{
+  "torch-pruning": {
+    "url": "https://files.pythonhosted.org/packages/20/bf/ac91f896d1a0c1bb4fceaac8ffd5bf8f23754d3566137e0b313b072f8f77/torch_pruning-1.6.1-py3-none-any.whl",
+    "bytes": 70181,
+    "sha256_recorded_locally": "5cb619e55bb4d1b7ce71be9782865ad4977bfe99c148fdce9c3822eab08a9c08",
+    "pypi_sha256_verified": true,
+    "version": "1.6.1"
+  },
+  "seaborn": {
+    "url": "https://files.pythonhosted.org/packages/83/11/00d3c3dfc25ad54e731d91449895a79e4bf2384dc3ac01809010ba88f6d5/seaborn-0.13.2-py3-none-any.whl",
+    "bytes": 294914,
+    "sha256_recorded_locally": "636f8336facf092165e27924f223d3c62ca560b1f2bb5dff7ab7fad265361987",
+    "pypi_sha256_verified": true,
+    "version": "0.13.2"
+  },
+  "sentry-sdk": {
+    "url": "https://files.pythonhosted.org/packages/0f/cb/c21b96ff379923310b4fb2c06e8d560d801e24aeb300faa72a04776868fc/sentry_sdk-2.42.1-py2.py3-none-any.whl",
+    "bytes": 380952,
+    "sha256_recorded_locally": "f8716b50c927d3beb41bc88439dc6bcd872237b596df5b14613e2ade104aee02",
+    "pypi_sha256_verified": true,
+    "version": "2.42.1"
+  }
+}

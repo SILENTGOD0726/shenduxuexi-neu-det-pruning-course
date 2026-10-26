@@ -1,0 +1,8 @@
+{
+  "file": "ultralytics/yolo/utils/__init__.py",
+  "patch": "lazy YOLO_CONFIG_DIR fallback",
+  "reason": "Avoid eager global-directory write probing even when project-local YOLO_CONFIG_DIR is provided",
+  "upstream_commit": "44c7c3514d87a5e05cfb14dba5a3eeb6eb860e70",
+  "hash_before_this_invocation": "2a1281a5bec4b94e2a37512da78eef24e7f50be6667c0bc22c0e82ef702da4f2",
+  "hash_after": "f9e54a0a7cff0f4c77844c400edc24b84e8d5b5985bae1efeeec4a1d15723c63"
+}

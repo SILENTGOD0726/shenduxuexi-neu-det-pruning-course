@@ -1,0 +1,6 @@
+{
+  "selection_split": "val",
+  "seed": 42,
+  "condition": "control",
+  "checkpoint": "run_seed42\\control\\weights\\best.pt"
+}

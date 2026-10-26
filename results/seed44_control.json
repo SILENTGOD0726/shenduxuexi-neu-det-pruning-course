@@ -1,0 +1,99 @@
+{
+  "seed": 44,
+  "condition": "control",
+  "checkpoint": "run_seed44\\control\\weights\\best.pt",
+  "test": {
+    "mAP50": 0.7404426044220696,
+    "mAP50_95": 0.4016637095845118,
+    "precision": 0.6933600053029606,
+    "recall": 0.7241694114451298,
+    "per_class_mAP50_95": {
+      "crazing": 0.15059770095452846,
+      "inclusion": 0.40693455213523855,
+      "patches": 0.583838532804212,
+      "pitted_surface": 0.4754526777293598,
+      "rolled-in_scale": 0.2530350398061717,
+      "scratches": 0.5401237540775605
+    },
+    "split": "test",
+    "precision_mode": "FP32",
+    "confidence_for_AP": 0.001,
+    "nms_iou": 0.7,
+    "max_detections": 100,
+    "precision_recall_operating_point": "Upstream maximum mean-F1 operating point; case images use a separate fixed confidence of 0.25",
+    "observed_input_shapes": [
+      [
+        14,
+        3,
+        320,
+        320
+      ],
+      [
+        32,
+        3,
+        320,
+        320
+      ]
+    ],
+    "parameters": 3012018,
+    "macs_per_image": 1018316600.0,
+    "counter": "torch_pruning.utils.count_ops_and_params; MAC-style estimate",
+    "input": [
+      1,
+      3,
+      320,
+      320
+    ]
+  },
+  "latency": {
+    "model_only_ms": {
+      "median": 6.009400000039022,
+      "mean": 6.203107777683828,
+      "p05": 5.907459998979903,
+      "p95": 7.449055000233784,
+      "sample_count": 180
+    },
+    "preprocess_forward_nms_ms": {
+      "median": 7.781999999679101,
+      "mean": 8.014145555605662,
+      "p05": 7.395675000771007,
+      "p95": 9.195015000022977,
+      "sample_count": 180
+    },
+    "conditions": {
+      "device": "NVIDIA GeForce RTX 3080 Laptop GPU",
+      "batch": 1,
+      "precision": "FP32",
+      "input": [
+        1,
+        3,
+        320,
+        320
+      ],
+      "tf32": false,
+      "fused": false,
+      "warmup": 20,
+      "rounds": 3,
+      "repetitions_per_round": 60,
+      "synchronization": "torch.cuda.synchronize before and after each measured call",
+      "scope": "in-RAM images; includes resize/color/tensor transfer and NMS in second metric; excludes disk I/O and drawing",
+      "uncertainty": "P05/P95 reflect repeated timing variation, not independent training uncertainty"
+    }
+  },
+  "reload_check": {
+    "independent_process_check": true,
+    "maximum_absolute_output_error": 0.0,
+    "allclose": true,
+    "rtol": 1e-05,
+    "atol": 0.0002,
+    "checkpoint_sha256": "10eb7e56de8a66752e1041286462d410610f5985b6c8f91f812c573b2e7a93d2"
+  },
+  "seeded_evaluation_order": [
+    "prune20",
+    "prune40_before",
+    "baseline",
+    "prune40",
+    "control",
+    "prune20_before"
+  ]
+}
